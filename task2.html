@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Web Development</title>
+    <link rel="stylesheet" href="task2.css">
+</head>
+<body>
+    <header>
+        <h1>Web Development Project</h1>
+        <nav class="flex-nav">
+            <a href="#contact">Contact Form</a>
+            <a href="#layout">Responsive Layout</a>
+            <a href="#todo">To-Do List</a>
+        </nav>
+    </header>
+
+    <main class="grid-container">
+        <section id="contact" class="card">
+            <h2>Contact Form</h2>
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <span class="error" id="nameError"></span>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <span class="error" id="emailError"></span>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                    <span class="error" id="messageError"></span>
+                </div>
+                
+                <button type="submit" class="btn">Submit</button>
+            </form>
+        </section>
+
+        <section id="layout" class="card">
+            <h2>Responsive Layout</h2>
+            <div class="responsive-grid">
+                <div class="grid-item">Item 1</div>
+                <div class="grid-item">Item 2</div>
+                <div class="grid-item">Item 3</div>
+                <div class="grid-item">Item 4</div>
+                <div class="grid-item">Item 5</div>
+                <div class="grid-item">Item 6</div>
+            </div>
+        </section>
+
+        <section id="todo" class="card">
+            <h2>To-Do List</h2>
+            <div class="todo-container">
+                <div class="todo-input">
+                    <input type="text" id="todoInput" placeholder="Add a new task...">
+                    <button id="addTodo" class="btn">Add</button>
+                </div>
+                <ul id="todoList"></ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Web Development Project</p>
+    </footer>
+
+    <script src="task2.js"></script>
+</body>
+</html>
